@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hazal Güven | Özel Ders & Eğitim Koçluğu</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== BOTTOM NAV (Mobile App style) ====== -->
+<nav class="bottom-nav d-flex d-lg-none" id="bottomNav">
+  <a href="#hero"      class="bnav-item active" data-section="hero">
+    <i class="bi bi-house-heart-fill"></i><span>Ana Sayfa</span>
+  </a>
+  <a href="#hakkimda"  class="bnav-item" data-section="hakkimda">
+    <i class="bi bi-person-circle"></i><span>Hakkımda</span>
+  </a>
+  <a href="#dersler"   class="bnav-item" data-section="dersler">
+    <i class="bi bi-book-half"></i><span>Dersler</span>
+  </a>
+  <a href="#yorumlar"  class="bnav-item" data-section="yorumlar">
+    <i class="bi bi-stars"></i><span>Yorumlar</span>
+  </a>
+  <a href="#iletisim"  class="bnav-item" data-section="iletisim">
+    <i class="bi bi-chat-heart-fill"></i><span>İletişim</span>
+  </a>
+</nav>
+
+<!-- ====== TOP NAV (Desktop) ====== -->
+<nav class="navbar navbar-expand-lg top-navbar sticky-top d-none d-lg-flex" id="topNav">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#hero">
+      <span class="brand-icon">✨</span> Hazal<span class="brand-accent">Öğretmen</span>
+    </a>
+    <div class="navbar-nav ms-auto gap-1">
+      <a class="nav-link top-nav-link" href="#hero">Ana Sayfa</a>
+      <a class="nav-link top-nav-link" href="#hakkimda">Hakkımda</a>
+      <a class="nav-link top-nav-link" href="#dersler">Dersler</a>
+      <a class="nav-link top-nav-link" href="#koçluk">Koçluk</a>
+      <a class="nav-link top-nav-link" href="#yorumlar">Yorumlar</a>
+      <a class="nav-link top-nav-link cta-nav" href="#iletisim">İletişim</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== HERO SECTION ====== -->
+<section id="hero" class="hero-section parallax-section" data-speed="0.4">
+  <div class="hero-blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100 py-5">
+      <div class="col-lg-6 col-md-8 text-center text-lg-start">
+        <div class="hero-badge bounce-in">
+          <i class="bi bi-patch-check-fill"></i> Akademisyen Öğretmen İle
+        </div>
+        <h1 class="hero-title slide-up">
+          Öğrenmek<br>
+          <span class="text-gradient">Eğlenceli</span><br>
+          <span class="hero-sub">Olabilir! 🎉</span>
+        </h1>
+        <p class="hero-desc slide-up delay-1">
+          Merhaba! Ben <strong>Hazal Güven</strong> — ilkokul ve ortaokul öğrencilerine
+          <em>evde özel ders</em> veren, eğitim koçluğu yapan tutkulu bir öğretmenim.
+        </p>
+        <div class="hero-pills slide-up delay-2">
+          <span class="pill pill-purple"><i class="bi bi-translate"></i> Türkçe</span>
+          <span class="pill pill-blue"><i class="bi bi-book-fill"></i> İnkılap Tarihi</span>
+          <span class="pill pill-green"><i class="bi bi-lightbulb-fill"></i> Fen Bilgisi</span>
+          <span class="pill pill-orange"><i class="bi bi-calculator-fill"></i> Matematik</span>
+        </div>
+        <div class="hero-ctas slide-up delay-3">
+          <a href="#iletisim" class="btn-primary-custom pulse-btn">
+            <i class="bi bi-rocket-takeoff-fill me-2"></i>Hemen Başlayalım!
+          </a>
+          <a href="#dersler" class="btn-ghost-custom">
+            Dersleri Keşfet <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
+        <div class="hero-illustration float-animation">
+          <div class="teacher-card">
+            <div class="teacher-avatar">
+              <div class="avatar-ring ring1"></div>
+              <div class="avatar-ring ring2"></div>
+              <div class="avatar-emoji">👩‍🏫</div>
+            </div>
+            <div class="floating-badge fb1"><i class="bi bi-star-fill"></i> 5.0 Puan</div>
+            <div class="floating-badge fb2">📚 3+ Yıl Deneyim</div>
+            <div class="floating-badge fb3">🏠 Eve Geliyor!</div>
+            <div class="subject-orbit">
+              <div class="orbit-item oi1">➕</div>
+              <div class="orbit-item oi2">🔬</div>
+              <div class="orbit-item oi3">📖</div>
+              <div class="orbit-item oi4">🗺️</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#fff" opacity="1"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ====== STATS BAR ====== -->
+<section id="stats" class="stats-bar">
+  <div class="container">
+    <div class="row g-3 justify-content-center text-center">
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="150">
+          <div class="stat-num" data-target="150">0</div>
+          <div class="stat-label">Mutlu Öğrenci</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="3">
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-label">Yıl Deneyim</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="4">
+          <div class="stat-num" data-target="4">0</div>
+          <div class="stat-label">Farklı Ders</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" data-count="98">
+          <div class="stat-num" data-target="98">0</div>
+          <div class="stat-label">% Başarı Oranı</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== HAKKIMDA ====== -->
+<section id="hakkimda" class="about-section">
+  <div class="section-bg-shape shape-about"></div>
+  <div class="container py-5">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">👩‍💼 Hakkımda</div>
+      <h2 class="section-title">Seninle <span class="text-gradient">Tanışayım</span></h2>
+    </div>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5">
+        <div class="about-card-wrapper">
+          <div class="about-deco-card deco1"></div>
+          <div class="about-deco-card deco2"></div>
+          <div class="about-main-card">
+            <div class="about-emoji-big">👩‍🎓</div>
+            <h3 class="about-name">Hazal Güven</h3>
+            <p class="about-title-tag">Öğretmen & Eğitim Koçu</p>
+            <div class="about-badges">
+              <span class="abadge"><i class="bi bi-mortarboard-fill"></i> Yüksek Lisans (Devam)</span>
+              <span class="abadge"><i class="bi bi-geo-alt-fill"></i> Evde Ders İmkanı Var</span>
+              <span class="abadge"><i class="bi bi-shield-check"></i> Sertifikalı Koç</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="about-text-block">
+          <p class="about-lead">
+            Eğitime olan tutkum beni sadece ders anlatmakla sınırlı kılmıyor —
+            her çocuğun kendi öğrenme ritmine, merakına ve potansiyeline inanıyorum.
+          </p>
+          <p class="about-body">
+            Eğitim Fakültesi mezunu olarak mesleğime başladım, şu an yüksek lisans eğitimime
+            devam ediyorum. Sahada edindiğim deneyimle birlikte akademik bilgimi sürekli
+            güncelliyorum. Her öğrenciyle birebir çalışıyor, <strong>evine giderek</strong>
+            onun kendi ortamında rahatça öğrenmesini sağlıyorum.
+          </p>
+          <div class="about-features row g-3 mt-3">
+            <div class="col-6">
+              <div class="af-item">
+                <div class="af-icon" style="background: var(--purple-light);">🎯</div>
+                <div>
+                  <div class="af-title">Kişiselleştirilmiş Plan</div>
+                  <div class="af-desc">Her öğrenciye özel müfredat</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="af-item">
+                <div class="af-icon" style="background: var(--blue-light);">💡</div>
+                <div>
+                  <div class="af-title">Aktif Öğrenme</div>
+                  <div class="af-desc">Soru-cevap, oyun, görsel</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="af-item">
+                <div class="af-icon" style="background: var(--green-light);">📊</div>
+                <div>
+                  <div class="af-title">İlerleme Takibi</div>
+                  <div class="af-desc">Aile ile düzenli iletişim</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="af-item">
+                <div class="af-icon" style="background: var(--orange-light);">🏆</div>
+                <div>
+                  <div class="af-title">Motivasyon Koçluğu</div>
+                  <div class="af-desc">Özgüven ve hedef odaklılık</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DERSLER ====== -->
+<section id="dersler" class="subjects-section parallax-section" data-speed="0.2">
+  <div class="subjects-bg"></div>
+  <div class="container py-5" style="position:relative; z-index:1;">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">📚 Dersler</div>
+      <h2 class="section-title">Hangi Dersi <span class="text-gradient">Öğretelim?</span></h2>
+      <p class="section-desc">İlkokul ve ortaokul düzeyinde 4 temel alanda özel ders veriyorum.</p>
+    </div>
+    <div class="row g-4">
+
+      <!-- Türkçe -->
+      <div class="col-md-6 col-lg-3">
+        <div class="subject-card sc-purple reveal-card">
+          <div class="sc-deco"></div>
+          <div class="sc-icon">📝</div>
+          <h3 class="sc-title">Türkçe</h3>
+          <ul class="sc-list">
+            <li>Okuma anlama</li>
+            <li>Yazma becerileri</li>
+            <li>Dil bilgisi</li>
+            <li>Sözcük hazinesi</li>
+            <li>Sınav hazırlığı</li>
+          </ul>
+          <div class="sc-level">
+            <span class="level-badge">1. – 8. Sınıf</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- İnkılap Tarihi -->
+      <div class="col-md-6 col-lg-3">
+        <div class="subject-card sc-blue reveal-card">
+          <div class="sc-deco"></div>
+          <div class="sc-icon">🗺️</div>
+          <h3 class="sc-title">İnkılap Tarihi</h3>
+          <ul class="sc-list">
+            <li>Atatürk ilkeleri</li>
+            <li>Kurtuluş Savaşı</li>
+            <li>Cumhuriyet tarihi</li>
+            <li>Harita çalışmaları</li>
+            <li>LGS hazırlığı</li>
+          </ul>
+          <div class="sc-level">
+            <span class="level-badge">6. – 8. Sınıf</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fen Bilgisi -->
+      <div class="col-md-6 col-lg-3">
+        <div class="subject-card sc-green reveal-card">
+          <div class="sc-deco"></div>
+          <div class="sc-icon">🔬</div>
+          <h3 class="sc-title">Fen Bilgisi</h3>
+          <ul class="sc-list">
+            <li>Deney & gözlem</li>
+            <li>Biyoloji temelleri</li>
+            <li>Fizik & kimya giriş</li>
+            <li>Çevre bilinci</li>
+            <li>Sınav stratejisi</li>
+          </ul>
+          <div class="sc-level">
+            <span class="level-badge">3. – 8. Sınıf</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matematik -->
+      <div class="col-md-6 col-lg-3">
+        <div class="subject-card sc-orange reveal-card">
+          <div class="sc-deco"></div>
+          <div class="sc-icon">➕</div>
+          <h3 class="sc-title">Matematik</h3>
+          <ul class="sc-list">
+            <li>Temel işlemler</li>
+            <li>Geometri & ölçüler</li>
+            <li>Kesirler & ondalık</li>
+            <li>Problemler</li>
+            <li>LGS hazırlığı</li>
+          </ul>
+          <div class="sc-level">
+            <span class="level-badge">1. – 8. Sınıf</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Ders Süreci -->
+    <div class="process-block mt-5">
+      <h3 class="text-center process-title mb-4">Ders Süreci Nasıl İşliyor?</h3>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="ps-num">1</div>
+          <div class="ps-icon">📞</div>
+          <div class="ps-text">Ücretsiz ön görüşme & ihtiyaç analizi</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">2</div>
+          <div class="ps-icon">📋</div>
+          <div class="ps-text">Kişisel ders planı hazırlanır</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">3</div>
+          <div class="ps-icon">🏠</div>
+          <div class="ps-text">Eve gidilerek dersler başlar</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="ps-num">4</div>
+          <div class="ps-icon">📈</div>
+          <div class="ps-text">Düzenli ilerleme raporu & koçluk</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== KOÇLUK ====== -->
+<section id="koçluk" class="coaching-section">
+  <div class="container py-5">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">🏆 Eğitim Koçluğu</div>
+      <h2 class="section-title">Sadece Ders Değil, <span class="text-gradient">Koçluk!</span></h2>
+    </div>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="coaching-visual">
+          <div class="coaching-emoji-cloud">
+            <span class="ec ec1">🎯</span>
+            <span class="ec ec2">💪</span>
+            <span class="ec ec3">🌟</span>
+            <span class="ec ec4">💡</span>
+            <span class="ec ec5">🚀</span>
+            <span class="ec ec6">❤️</span>
+          </div>
+          <div class="coaching-center-card">
+            <div class="cc-emoji">👩‍🏫</div>
+            <div class="cc-text">Eğitim Koçu</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="coaching-items">
+          <div class="coaching-item ci-anim">
+            <div class="ci-icon" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);">🎯</div>
+            <div class="ci-content">
+              <h4>Hedef Belirleme</h4>
+              <p>Öğrencinin kısa ve uzun vadeli akademik hedefleri belirlenerek somut bir yol haritası çizilir.</p>
+            </div>
+          </div>
+          <div class="coaching-item ci-anim">
+            <div class="ci-icon" style="background: linear-gradient(135deg, #60a5fa, #2563eb);">🧠</div>
+            <div class="ci-content">
+              <h4>Öğrenme Stili Analizi</h4>
+              <p>Her çocuk farklı öğrenir. Görsel, işitsel veya kinestetik öğrenme stiline göre yöntem belirlenir.</p>
+            </div>
+          </div>
+          <div class="coaching-item ci-anim">
+            <div class="ci-icon" style="background: linear-gradient(135deg, #34d399, #059669);">💬</div>
+            <div class="ci-content">
+              <h4>Aile Koordinasyonu</h4>
+              <p>Aile ile düzenli iletişim kurularak evdeki öğrenme ortamı desteklenir.</p>
+            </div>
+          </div>
+          <div class="coaching-item ci-anim">
+            <div class="ci-icon" style="background: linear-gradient(135deg, #fb923c, #ea580c);">⭐</div>
+            <div class="ci-content">
+              <h4>Özgüven Geliştirme</h4>
+              <p>Başarı kutlamaları ve pozitif geri bildirimlerle çocuğun öz güveni artırılır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PARALLAX BANNER ====== -->
+<section class="parallax-banner parallax-section" data-speed="0.5">
+  <div class="pb-overlay"></div>
+  <div class="container text-center py-5 position-relative">
+    <div class="pb-content">
+      <h2 class="pb-title">Her Çocuk Öğrenebilir. <br><span>Doğru Rehberle!</span></h2>
+      <p class="pb-desc">Eğitime yatırım yapmak için doğru zaman her zaman şimdidir.</p>
+      <a href="#iletisim" class="btn-primary-custom mt-3 d-inline-block pulse-btn">
+        <i class="bi bi-telephone-fill me-2"></i>Şimdi İletişime Geç
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== YORUMLAR ====== -->
+<section id="yorumlar" class="reviews-section">
+  <div class="container py-5">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">⭐ Yorumlar</div>
+      <h2 class="section-title">Aileler Ne <span class="text-gradient">Diyor?</span></h2>
+    </div>
+    <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"Hazal Hanım'dan önce oğlum matematikten çok korkuyordu. Şimdi en sevdiği ders oldu! İnanılmaz sabırlı ve ilgili bir öğretmen."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">🧑</div>
+            <div>
+              <div class="rc-name">Ahmet Bey</div>
+              <div class="rc-child">4. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"Evimize gelmesi çok büyük kolaylık sağlıyor. Kızımın Türkçe notu 40'tan 90'a çıktı. Teşekkürler Hazal Hocam!"</p>
+          <div class="rc-author">
+            <div class="rc-avatar">👩</div>
+            <div>
+              <div class="rc-name">Fatma Hanım</div>
+              <div class="rc-child">6. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"Sadece ders anlatmıyor, çocuğumla gerçekten ilgileniyor. LGS'ye mükemmel hazırlandık. Koçluk desteği paha biçilemez."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">👨</div>
+            <div>
+              <div class="rc-name">Mehmet Bey</div>
+              <div class="rc-child">8. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"İkiz çocuklarım için iki ayrı plan yaptı. Her birinin öğrenme hızına göre ilerledi. Profesyonel yaklaşımına hayranım."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">👩‍👧‍👦</div>
+            <div>
+              <div class="rc-name">Zeynep Hanım</div>
+              <div class="rc-child">5. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"Fen bilgisi sınavlarından sürekli düşük not alan kızım şimdi deney meraklısı. Hazal Öğretmen onu bambaşka bir gözle görmesini sağladı."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">👩</div>
+            <div>
+              <div class="rc-name">Ayşe Hanım</div>
+              <div class="rc-child">7. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-stars">★★★★★</div>
+          <p class="rc-text">"İnkılap tarihi ezber dersi değil diyerek başladı. Oğlum haritalar ve hikayelerle o kadar çok şey öğrendi ki öğretmeninin de dikkatini çekti."</p>
+          <div class="rc-author">
+            <div class="rc-avatar">👨</div>
+            <div>
+              <div class="rc-name">Ali Bey</div>
+              <div class="rc-child">8. Sınıf Velisi</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+    <div class="carousel-controls">
+      <button class="cc-btn" id="prevBtn"><i class="bi bi-chevron-left"></i></button>
+      <button class="cc-btn" id="nextBtn"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="sss" class="faq-section">
+  <div class="container py-5">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">❓ SSS</div>
+      <h2 class="section-title">Sıkça Sorulan <span class="text-gradient">Sorular</span></h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>📍 Hangi bölgelere ders veriyorsunuz?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Şu anda şehir merkezi ve çevre semtlere ulaşım sağlıyorum. Adresinizi paylaşırsanız size özel bilgi verebilirim!
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>⏱️ Ders saatleri ne kadar?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Genellikle 1 – 1.5 saatlik ders yapıyorum. Öğrencinin yaşı ve dikkat süresine göre bu süre ayarlanabilir.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>📅 Haftada kaç gün ders yapılıyor?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Haftada 2–3 gün en verimli program olarak öneriyorum. Sınav dönemlerinde yoğunluk artırılabilir. Programı sizinle birlikte belirliyoruz.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>💳 Ücretlendirme nasıl?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Ücretler ders sayısı, ders grubu ve bölgeye göre değişiklik göstermektedir. İletişim formunu doldurun, size özel fiyat bilgisi vereyim.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>🎒 Ders materyallerini siz mi getiriyorsunuz?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Evet! Çalışma kağıtları, görsel materyaller ve sınav deneme sorularını ben hazırlayıp getiriyorum. Ek bir maliyet yok.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>📲 Ders dışında soru sorabilir miyiz?</span>
+              <i class="bi bi-plus-circle-fill faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              WhatsApp üzerinden kısa sorular için her zaman ulaşabilirsiniz. Öğrencinin motivasyonunu desteklemek benim için çok önemli!
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== İLETİŞİM ====== -->
+<section id="iletisim" class="contact-section parallax-section" data-speed="0.3">
+  <div class="contact-blobs">
+    <div class="cblob cb1"></div>
+    <div class="cblob cb2"></div>
+  </div>
+  <div class="container py-5 position-relative">
+    <div class="section-header text-center mb-5">
+      <div class="section-tag">💬 İletişim</div>
+      <h2 class="section-title" style="color:#fff;">Seninle <span style="color:#fde68a;">Tanışmaya</span><br>Hazırım!</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-5">
+        <div class="contact-info-block">
+          <div class="ci-item">
+            <div class="ci-ico">📱</div>
+            <div>
+              <div class="ci-label">WhatsApp & Telefon</div>
+              <a href="tel:+905551234567" class="ci-value">0555 123 45 67</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-ico">📧</div>
+            <div>
+              <div class="ci-label">E-posta</div>
+              <a href="mailto:hazal@hazalöğretmen.com" class="ci-value">hazal@hazalöğretmen.com</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-ico">📍</div>
+            <div>
+              <div class="ci-label">Hizmet Bölgesi</div>
+              <span class="ci-value">Şehir Merkezi & Çevresi</span>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-ico">🕐</div>
+            <div>
+              <div class="ci-label">Çalışma Saatleri</div>
+              <span class="ci-value">Hafta içi & Hafta sonu</span>
+            </div>
+          </div>
+          <div class="contact-social mt-4">
+            <a href="#" class="social-btn whatsapp-btn pulse-btn">
+              <i class="bi bi-whatsapp"></i> WhatsApp'tan Yaz
+            </a>
+            <a href="#" class="social-btn insta-btn">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-form-card">
+          <h3 class="cf-title">Hızlı Mesaj Gönder</h3>
+          <div class="cf-field">
+            <label>Adınız Soyadınız</label>
+            <input type="text" class="cf-input" placeholder="Örn: Ayşe Kaya">
+          </div>
+          <div class="cf-field">
+            <label>Telefon Numaranız</label>
+            <input type="tel" class="cf-input" placeholder="0555 000 00 00">
+          </div>
+          <div class="cf-field">
+            <label>Çocuğunuzun Sınıfı</label>
+            <select class="cf-input">
+              <option value="">Seçiniz...</option>
+              <option>1. Sınıf</option>
+              <option>2. Sınıf</option>
+              <option>3. Sınıf</option>
+              <option>4. Sınıf</option>
+              <option>5. Sınıf</option>
+              <option>6. Sınıf</option>
+              <option>7. Sınıf</option>
+              <option>8. Sınıf</option>
+            </select>
+          </div>
+          <div class="cf-field">
+            <label>İlgilenilen Ders(ler)</label>
+            <div class="cf-checks">
+              <label class="cf-check"><input type="checkbox"> <span>📝 Türkçe</span></label>
+              <label class="cf-check"><input type="checkbox"> <span>🗺️ İnkılap</span></label>
+              <label class="cf-check"><input type="checkbox"> <span>🔬 Fen</span></label>
+              <label class="cf-check"><input type="checkbox"> <span>➕ Matematik</span></label>
+            </div>
+          </div>
+          <div class="cf-field">
+            <label>Mesajınız (İsteğe Bağlı)</label>
+            <textarea class="cf-input cf-textarea" placeholder="Çocuğunuz hakkında kısa bilgi verebilirsiniz..."></textarea>
+          </div>
+          <button class="cf-submit pulse-btn" onclick="submitForm(this)">
+            <i class="bi bi-send-fill me-2"></i>Mesaj Gönder
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center py-4 g-3">
+      <div class="col-md-4 text-center text-md-start">
+        <div class="footer-brand">✨ Hazal<span>Öğretmen</span></div>
+        <p class="footer-tagline">Öğrenmeyi sevdiren öğretmen</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="footer-links">
+          <a href="#hero">Ana Sayfa</a>
+          <a href="#hakkimda">Hakkımda</a>
+          <a href="#dersler">Dersler</a>
+          <a href="#iletisim">İletişim</a>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <div class="footer-social">
+          <a href="#" class="fs-icon"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="fs-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="fs-icon"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="footer-copy mt-2">© 2025 Hazal Güven</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== SCROLL TO TOP ====== -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
