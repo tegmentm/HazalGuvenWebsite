@@ -1,6 +1,5 @@
 /* =============================================
-   ELİF ÖĞRETMEN — style.css
-   Enerjik, Renkli, Mobil-Uygulama Temalı
+   HAZAL ÖĞRETMEN — style.css
    ============================================= */
 
 /* ── CSS Custom Properties ── */
@@ -268,6 +267,17 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 .pill-blue   { background: rgba(37,99,235,0.3);  color: #bfdbfe; border: 1px solid rgba(96,165,250,0.4); }
 .pill-green  { background: rgba(5,150,105,0.3);  color: #a7f3d0; border: 1px solid rgba(52,211,153,0.4); }
 .pill-orange { background: rgba(234,88,12,0.3);  color: #fed7aa; border: 1px solid rgba(251,146,60,0.4); }
+.pill-pink   { background: rgba(236,72,153,0.3); color: #fbcfe8; border: 1px solid rgba(236,72,153,0.4); }
+
+/* 5 kart — son kart ortalansın (lg ekranda 4+1 düzeni) */
+@media (min-width: 992px) {
+  #dersler .row > .col-lg-3:last-child {
+    grid-column: auto;
+  }
+  #dersler .row {
+    justify-content: center;
+  }
+}
 
 /* CTAs */
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -645,7 +655,7 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 }
 .sc-deco {
   position: absolute;
-  width: 120px; height: 120px;
+  width: 80px; height: 80px;
   border-radius: 50%;
   top: -40px; right: -40px;
   opacity: 0.15;
@@ -654,6 +664,7 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 .sc-blue   .sc-deco { background: var(--blue); }
 .sc-green  .sc-deco { background: var(--green); }
 .sc-orange .sc-deco { background: var(--orange); }
+.sc-pink   .sc-deco { background: var(--pink); }
 
 .sc-icon { font-size: 2.8rem; margin-bottom: 12px; display: block; }
 .sc-title {
@@ -665,6 +676,7 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 .sc-blue   .sc-title { color: var(--blue); }
 .sc-green  .sc-title { color: var(--green); }
 .sc-orange .sc-title { color: var(--orange); }
+.sc-pink   .sc-title { color: var(--pink); }
 
 .sc-list {
   list-style: none;
@@ -686,6 +698,7 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 .sc-blue   .sc-list li::before { color: var(--blue); }
 .sc-green  .sc-list li::before { color: var(--green); }
 .sc-orange .sc-list li::before { color: var(--orange); }
+.sc-pink   .sc-list li::before { color: var(--pink); }
 
 .level-badge {
   display: inline-block;
@@ -698,6 +711,7 @@ h1,h2,h3,h4 { font-family: 'Baloo 2', cursive; font-weight: 800; }
 .sc-blue   .level-badge { background: var(--blue-light);   color: var(--blue); }
 .sc-green  .level-badge { background: var(--green-light);  color: var(--green); }
 .sc-orange .level-badge { background: var(--orange-light); color: var(--orange); }
+.sc-pink   .level-badge { background: #fce7f3;             color: var(--pink); }
 
 /* Process Steps */
 .process-block {
